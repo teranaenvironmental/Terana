@@ -376,6 +376,29 @@ a:hover{color:#000}
 .site-nav .tel{color:var(--accent)}
 
 .page-hero figure.full img{aspect-ratio:3/4}
+
+/* team page */
+.team-hero .wrap{display:block; padding-top:clamp(28px,5vw,60px); padding-bottom:clamp(20px,4vw,40px)}
+.team-grid{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:clamp(24px,4vw,44px)}
+.team-grid .person h3{margin:.9em 0 .2em; font-size:1.25rem}
+.team-grid .role{color:var(--charcoal); font-size:.95rem; margin:0 0 .7em}
+.team-grid .person p{max-width:34em}
+.portrait{aspect-ratio:4/5; background:var(--white); border:1px solid #DDD8CF; position:relative; display:flex; align-items:flex-end; justify-content:flex-start; overflow:hidden}
+.portrait::before{content:""; position:absolute; inset:auto -10% -10% auto; width:60%; aspect-ratio:1; background:var(--feather); opacity:.9; clip-path:polygon(0 100%,100% 0,100% 100%)}
+.portrait span{position:relative; font-weight:600; font-size:2.2rem; letter-spacing:.04em; color:var(--ink); padding:14px 16px}
+.portrait img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
+.portrait.dog::before{background:var(--olive)}
+@media (max-width:640px){.team-grid{grid-template-columns:1fr 1fr; gap:16px}.team-grid .person h3{font-size:1.05rem}.team-grid .role{font-size:.85rem}.portrait span{font-size:1.6rem}}
+
+table.fees{width:100%;max-width:760px;border-collapse:collapse;background:var(--white);border:1px solid var(--rule)}
+table.fees th,table.fees td{text-align:left;vertical-align:top;padding:16px 20px;border-bottom:1px solid var(--rule)}
+table.fees thead th{font-weight:600;font-size:.9rem;color:var(--charcoal);background:var(--paper)}
+table.fees tbody th{font-weight:600}
+table.fees tbody th span{display:block;font-weight:400;font-size:.92rem;color:var(--charcoal);margin-top:2px}
+table.fees td{white-space:nowrap;font-weight:600;color:var(--burnt);text-align:right}
+table.fees thead th:last-child{text-align:right}
+.fees-note{max-width:760px;margin-top:14px;font-size:.95rem;color:var(--charcoal)}
+@media (max-width:520px){table.fees th,table.fees td{padding:12px 14px}}
 </style>
 </head>
 <body>
@@ -384,7 +407,7 @@ a:hover{color:#000}
 <header class="site-head"><div class="wrap">
 <a class="logo" href="index.html" aria-label="Terana Environmental home"><img src="assets/logo.webp" width="560" height="247" alt="Terana Environmental"></a>
 <nav class="site-nav" aria-label="Main"><ul>
-<li><a href="index.html#services">Services</a></li><li><a href="index.html#about">About</a></li><li><a href="#enquire">Enquire</a></li><li><a class="tel" href="tel:+61450303434">0450 303 434</a></li>
+<li><a href="index.html#services">Services</a></li><li><a href="index.html#about">About</a></li><li><a href="team.html">Team</a></li><li><a href="#enquire">Enquire</a></li><li><a class="tel" href="tel:+61450303434">0450 303 434</a></li>
 </ul></nav></div></header>
 <main id="main">
 <section class="page-hero"><div class="wrap"><div>
@@ -394,7 +417,7 @@ a:hover{color:#000}
 <section class="section enquire" id="enquire"><div class="wrap"><div class="cols">
 <div><h2>Send an enquiry</h2><p style="margin-top:1em">Tell us about the site and what you are seeing. We will reply by email or phone.</p>
 <ul class="contact-list"><li><span>Phone</span><a href="tel:+61450303434">0450 303 434</a></li><li><span>Email</span><a href="mailto:courtney@teranaenvironmental.com.au">courtney@teranaenvironmental.com.au</a></li><li><span>Service area</span><strong>All of Western Australia</strong></li></ul></div>
-<form class="enquiry-form" action="https://formspree.io/f/xljgdpew" method="POST">
+<form class="enquiry-form" action="https://script.google.com/macros/s/AKfycbzRbG5p-D2OyDnUwLYNplcby7UUC2Pagl7B82gxtWMkI3eHl0_0UVmx9ZSDAG8M2vI3-g/exec" method="POST">
 <input type="hidden" name="_subject" value="Website enquiry: Terana Environmental"><input type="hidden" name="page" value="feral-deer-control">
 <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
 <div class="field"><label for="feral-deer-control-name">Name</label><input id="feral-deer-control-name" name="name" type="text" autocomplete="name" required></div>
@@ -409,7 +432,7 @@ a:hover{color:#000}
 </main>
 <footer class="site-foot"><div class="wrap"><div class="cols">
 <img src="assets/logo-light.webp" width="560" height="247" loading="lazy" alt="Terana Environmental">
-<ul class="links"><li><a href="detection-dog-surveys.html">Fox den detection</a></li><li><a href="pest-management-plans.html">Pest management plans and IPM programs</a></li><li><a href="field-necropsy.html">Field necropsy</a></li><li><a href="gis-mapping.html">GIS and mapping</a></li><li><a href="monitoring.html">Monitoring and camera surveillance</a></li><li><a href="council-feral-animal-management.html">Feral animal management for local government</a></li><li><a href="vertebrate-pest-management.html">Vertebrate pest management</a></li><li><a href="fox-control.html">Fox control</a></li><li><a href="rabbit-control.html">Rabbit control</a></li><li><a href="feral-cat-control.html">Feral cat control</a></li><li><a href="feral-deer-control.html">Feral deer control</a></li><li><a href="feral-pig-control.html">Feral pig control</a></li><li><a href="bird-management.html">Bird management</a></li><li><a href="native-fauna-management.html">Native fauna impact management</a></li><li><a href="habitat-creation.html">Habitat creation</a></li><li><a href="snake-removal.html">Snake removal and relocation</a></li><li><a href="bee-removal.html">Bee removal and relocation</a></li></ul>
+<ul class="links"><li><a href="detection-dog-surveys.html">Fox den detection</a></li><li><a href="pest-management-plans.html">Pest management plans and IPM programs</a></li><li><a href="field-necropsy.html">Field necropsy</a></li><li><a href="gis-mapping.html">GIS and mapping</a></li><li><a href="monitoring.html">Monitoring and camera surveillance</a></li><li><a href="council-feral-animal-management.html">Feral animal management for local government</a></li><li><a href="vertebrate-pest-management.html">Vertebrate pest management</a></li><li><a href="fox-control.html">Fox control</a></li><li><a href="rabbit-control.html">Rabbit control</a></li><li><a href="feral-cat-control.html">Feral cat control</a></li><li><a href="feral-deer-control.html">Feral deer control</a></li><li><a href="feral-pig-control.html">Feral pig control</a></li><li><a href="bird-management.html">Bird management</a></li><li><a href="native-fauna-management.html">Native fauna impact management</a></li><li><a href="habitat-creation.html">Habitat creation</a></li><li><a href="snake-removal.html">Snake removal and relocation</a></li><li><a href="bee-removal.html">Bee removal and relocation</a></li><li style="margin-top:.8em"><a href="fees.html">Schedule of fees</a></li></ul>
 <ul><li><strong>Terana Environmental Pty Ltd</strong></li><li>ABN 21 699 686 916</li>
 <li style="margin-top:.8em"><a href="tel:+61450303434">0450 303 434</a></li><li><a href="mailto:courtney@teranaenvironmental.com.au">courtney@teranaenvironmental.com.au</a></li></ul>
 </div><p class="legal">&copy; 2026 Terana Environmental Pty Ltd</p></div></footer>
